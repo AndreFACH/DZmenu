@@ -10,43 +10,47 @@
   display: block;
   clear: both;
 }
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu > li {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .menu li:hover>.drop {
-    display: block;
-  }
-  .menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: blue;
-  }
-  
-  .drop {
-    width: 100px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    padding: 10px;
-    list-style: none;
-    display: none;
-  }
 
-  .drop  .drop {
-    top: 0;
-    left: 100%;
-  }
-    
-  .drop>li {
-    position: relative;
-  }
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: yellow;
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li:hover>.drop {
+  display: block;
+}
+
+.menu a {
+  border: 1px solid ;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: brown;
+}
+
+.drop {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0;
+  list-style: none;
+  display: none;
+  background: blue;
+}
+
+.drop  .drop {
+  top: 0;
+  left: 100%;
+}
   
+.drop>li {
+  position: relative;
+}
